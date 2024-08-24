@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen Clone</title>
+  <link rel="stylesheet" href="../Stylesheets/style.css">
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+</head>
+<body>
+  <nav id="navbarContainer">
+    <div id="navbar">
+      <div id="navLeft">
+        <div id="logo">
+          <span><i class="fa-brands fa-codepen"></i></span>
+        </div>
+        <div id="titleContainer">
+          <div id="title">
+            <input type="text" id="untitledInput" autofocus="autofocus">
+            <span id="untitled">Untitled</span>
+            <i class="fa-solid fa-pencil editButton"></i>
+          </div>
+          <div>
+            <span id="tag">
+              Captain Anonymous
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="navRight">
+        <button id="saveButton"><i class="fa-solid fa-download"></i>Save</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="editorContainer">
+
+    <div id="editors">
+
+      <div id="htmlEditor" class="editor">
+        <span> <i class="fa-brands fa-html5 html"></i> HTML </span>
+        <textarea id="htmlContent" cols="30" rows="9"></textarea>
+      </div>
+
+      <div id="cssEditor" class="editor">
+        <span> <i class="fa-brands fa-css3-alt css"></i> CSS </span>
+        <textarea id="cssContent" cols="30" rows="9"></textarea>
+      </div>
+
+      <div id="jsEditor" class="editor">
+        <span> <i class="fa-brands fa-js js"></i> JS </span>
+        <textarea id="jsContent" cols="30" rows="10"></textarea>
+      </div>
+
+    </div>
+
+    <div id="output">
+      <iframe id="outputContent" frameborder="0"></iframe>
+    </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/d099529a6d.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/script.js"></script>
+</body>
+</html>
